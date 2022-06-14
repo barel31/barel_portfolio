@@ -1,6 +1,6 @@
 {
-  "homepage": "https://barel31.github.io/barel_portfolio/",
-  "name": "frontend_react",
+  "homepage": "http://barel31.github.io/barel_portfolio/",
+  "name": "barel_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
