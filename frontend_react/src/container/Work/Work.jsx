@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
 
@@ -64,7 +64,7 @@ const Work = () => {
                                 whileHover={{ opacity: [0, 1] }}
                                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChilder: 0.5 }}
                                 className='app__work-hover app__flex'>
-                                <a href={v.projectLink} target='_blank'>
+                                <a href={v.projectLink} target='_blank' rel='noreferrer'>
                                     <motion.div
                                         whileHover={{ scale: [0, 1] }}
                                         whileInView={{ scale: [1, 0.9] }}
@@ -73,7 +73,7 @@ const Work = () => {
                                         <AiFillEye />
                                     </motion.div>
                                 </a>
-                                <a href={v.codeLink} target='_blank'>
+                                <a href={v.codeLink} target='_blank' rel='noreferrer'>
                                     <motion.div
                                         whileHover={{ scale: [0, 1] }}
                                         whileInView={{ scale: [1, 0.9] }}
@@ -102,4 +102,4 @@ const Work = () => {
     );
 };
 
-export default AppWrap(Work, 'work');
+export default AppWrap(MotionWrap(Work, 'app__work'), 'work', 'app__primarybg');
