@@ -49,7 +49,7 @@ const Work = () => {
 					'Python Flask',
 					'Vanilla JS',
 					'MongoDB',
-					'Express',
+					'Express JS',
 					'NodeJS',
 					'Bootstrap',
 					'All',
