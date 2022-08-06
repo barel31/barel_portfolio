@@ -59,6 +59,7 @@ const Header = () => {
                     images.sass,
                     images.python,
                     images.flask,
+                    images.mongo,
                 ].map((v, i) => (
                     <div className='circle-cmp app__flex' key={`circle-${i}`}>
                         <img src={v} alt='circle' />
