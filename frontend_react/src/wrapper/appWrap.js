@@ -12,7 +12,7 @@ const appWrap = (Components, idName, classNames) =>
 
                     <div className='copyright'>
                         <p className='p-text'>@2022 <a href="https://github.com/barel31/">/barel31</a></p>
-                        <p className='p-text'>made with JSM</p>
+                        <p className='p-text'>all right reserved</p>
                     </div>
                 </div>
                 <NavigationDots active={idName} />
