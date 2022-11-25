@@ -99,12 +99,14 @@
     margin-left: 1rem;
 
     div {
+        position: relative;
         width: 100px;
         height: 100px;
         border-radius: 50%;
         background: var(--white-color);
         box-shadow: 0 0 20px rbga(0, 0, 0, 0.1);
-
+        top: 10rem;
+        
         img {
             width: 60%;
             height: 60%;
@@ -114,33 +116,48 @@
     div:nth-child(1) {
         width: 90px;
         height: 90px;
-        margin-left: -5rem;
+        left: -5rem;
     }
 
     div:nth-child(2) {
-        margin-left: -1rem;
+        left: -1rem;
     }
 
     div:nth-child(3) {
-        margin-left: 1rem;
+        left: 1rem;
         width: 70px;
         height: 70px;
     }
 
     div:nth-child(4) {
-        margin-left: 1rem;
+        left: 1rem;
         width: 90px;
         height: 90px;
     }
 
     div:nth-child(5) {
-        margin-left: -2rem;
+        left: -2rem;
         width: 80px;
         height: 80px;
     }
 
     div:nth-child(6) {
-        margin-left: -4rem;
+        top: -14rem;
+        left: -52rem;
+        width: 100px;
+        height: 100px;
+    }
+    
+    div:nth-child(7) {
+        top: -12rem;
+        left: -53rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    div:nth-child(8) {
+        top: -10rem;
+        left: -52rem;
         width: 100px;
         height: 100px;
     }
@@ -157,7 +174,7 @@
         }
 
         div:nth-child(3) {
-            margin-left: 2rem;
+            left: 2rem;
         }
 
         div:nth-child(4) {
