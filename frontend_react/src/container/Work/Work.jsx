@@ -43,15 +43,15 @@ const Work = () => {
 			</h2>
 			<div className="app__work-filter">
 				{[
-					'UI/UX',
 					'Web App',
-					'React JS',
-					'Python Flask',
-					'Vanilla JS',
+					'React',
+					'Python',
+					'Flask',
+					'JavaScript ES6',
 					'MongoDB',
-					'Express JS',
-					'NodeJS',
-					'Bootstrap',
+					'Express.js',
+					'Node.js',
+					'SQL',
 					'All',
 				].map((v, i) => (
 					<div
