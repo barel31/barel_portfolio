@@ -15,6 +15,15 @@ const scaleVariants = {
 		},
 	},
 };
+
+const reverseCircle = (img) => {
+	if (img === images.mongo || img === images.next || img === images.express) {
+		return true;
+	}
+
+	return false;
+};
+
 const Header = () => {
 	return (
 		<div className="app__header app__flex">
@@ -49,10 +58,7 @@ const Header = () => {
 					className="overlay_circle"
 				/>
 			</motion.div>
-			<motion.div
-				variants={scaleVariants}
-				whileInView={scaleVariants.whileInView}
-				className="app__header-circles">
+			<div className="app__header-circles">
 				{[
 					images.node,
 					images.react,
@@ -63,11 +69,14 @@ const Header = () => {
 					images.next,
 					images.express,
 				].map((v, i) => (
-					<div className="circle-cmp app__flex" key={`circle-${i}`}>
+					<motion.div
+						className={`circle-cmp app__flex ${reverseCircle(v) ? 'circle-cmp-right' : ''}`}
+						whileInView={{ x: [reverseCircle(v) ? -200 : 200, 0], y: [100, 0], opacity: [0, 1] }}
+						key={`circle-${i}`}>
 						<img src={v} alt="circle" />
-					</div>
+					</motion.div>
 				))}
-			</motion.div>
+			</div>
 		</div>
 	);
 };
