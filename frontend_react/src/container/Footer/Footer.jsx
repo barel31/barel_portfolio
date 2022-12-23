@@ -39,13 +39,13 @@ const Footer = () => {
 			<h2 className="head-text">Take a coffe & chat with me</h2>
 
 			<div className="app__footer-cards">
-				<div className="app__footer-card" onClick={() => window.open('mailto:barel123133@gmail.com', '_blank')}>
+				<div className="app__footer-card" onClick={() => window.open('mailto:barel123133@gmail.com')}>
 					<img src={images.email} alt="email" />
 					<a href="mailto:barel123133@gmail.com" className="p-text">
 						barel123133@gmail.com
 					</a>
 				</div>
-				<div className="app__footer-card" onClick={() => window.open('tel: +972 (52) 544-4634', '_blank')}>
+				<div className="app__footer-card" onClick={() => window.open('tel: +972 (52) 544-4634')}>
 					<img src={images.mobile} alt="mobile" />
 					<a href="tel: +972 (52) 544-4634" className="p-text">
 						+972 (52) 544-4634
