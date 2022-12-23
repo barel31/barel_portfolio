@@ -1,20 +1,9 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
-
-const scaleVariants = {
-	whileInView: {
-		scale: [0, 1],
-		opacity: [0, 1],
-		transition: {
-			duration: 1,
-			ease: 'easeInOut',
-		},
-	},
-};
 
 const reverseCircle = (img) => {
 	if (img === images.mongo || img === images.next || img === images.express) {
@@ -25,6 +14,9 @@ const reverseCircle = (img) => {
 };
 
 const Header = () => {
+	const ref = useRef(null);
+	const isInView = useInView(ref);
+
 	return (
 		<div className="app__header app__flex">
 			<motion.div
@@ -58,7 +50,7 @@ const Header = () => {
 					className="overlay_circle"
 				/>
 			</motion.div>
-			<div className="app__header-circles">
+			<div className="app__header-circles" ref={ref}>
 				{[
 					images.node,
 					images.react,
@@ -71,7 +63,9 @@ const Header = () => {
 				].map((v, i) => (
 					<motion.div
 						className={`circle-cmp app__flex ${reverseCircle(v) ? 'circle-cmp-right' : ''}`}
-						whileInView={{ x: [reverseCircle(v) ? -200 : 200, 0], y: [100, 0], opacity: [0, 1] }}
+						animate={
+							isInView ? { x: [reverseCircle(v) ? -200 : 200, 0], y: [100, 0], opacity: [0, 1] } : {}
+						}
 						key={`circle-${i}`}>
 						<img src={v} alt="circle" />
 					</motion.div>
