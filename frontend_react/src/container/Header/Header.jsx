@@ -60,6 +60,7 @@ const Header = () => {
 					images.mongo,
 					images.next,
 					images.express,
+					images.redux,
 				].map((v, i) => (
 					<motion.div
 						className={`circle-cmp app__flex ${reverseCircle(v) ? 'circle-cmp-right' : ''}`}

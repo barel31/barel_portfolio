@@ -56,8 +56,8 @@
 	justify-content: flex-end;
 	align-items: flex-end;
 	flex-direction: column;
-    z-index: 2;
-    
+	z-index: 2;
+
 	.badge-cmp,
 	.tag-cmp {
 		padding: 1rem 2rem;
@@ -118,48 +118,53 @@
 	div:nth-child(1) {
 		width: 90px;
 		height: 90px;
-		left: -5rem;
+		left: -6rem;
 	}
 
 	div:nth-child(2) {
-		left: -1rem;
+		left: -2rem;
 	}
 
 	div:nth-child(3) {
-		left: 1rem;
+		top: 19vh;
 		width: 70px;
 		height: 70px;
 	}
 
 	div:nth-child(4) {
-		left: 1rem;
+		top: 21vh;
 		width: 90px;
 		height: 90px;
 	}
 
 	div:nth-child(5) {
 		left: -2rem;
+		top: 22vh;
 		width: 80px;
 		height: 80px;
 	}
 
 	div:nth-child(6) {
-		top: -14rem;
-		right: 45vw;
+		top: -12rem;
+		right: 46.5vw;
 	}
 
 	div:nth-child(7) {
-		top: -12rem;
-		right: 46vw;
+		top: -11rem;
+		right: 48vw;
 	}
 
 	div:nth-child(8) {
 		top: -10rem;
-		right: 43vw;
+		right: 48vw;
+	}
+
+	div:nth-child(9) {
+		top: -9rem;
+		right: 46vw;
 	}
 
 	@media screen and (min-width: 2000px) {
-
 		div:nth-child(1) {
 			width: 150px;
 			height: 150px;

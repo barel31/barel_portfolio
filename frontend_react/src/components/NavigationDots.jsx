@@ -11,7 +11,7 @@ function NavigationDots({ active }) {
 					key={v + i}
 					className="app__navigation-dot"
 					style={active === v ? { backgroundColor: '#313BAC' } : {}}
-				/>
+				> </a>
 			))}
 		</div>
 	);
