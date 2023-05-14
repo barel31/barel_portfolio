@@ -118,49 +118,56 @@
 	div:nth-child(1) {
 		width: 90px;
 		height: 90px;
-		left: -6rem;
+		left: -8vh;
 	}
 
 	div:nth-child(2) {
-		left: -2rem;
+		left: -3vh;
 	}
 
 	div:nth-child(3) {
+		left: 1vh;
 		top: 19vh;
-		width: 70px;
-		height: 70px;
+		width: 80px;
+		height: 80px;
 	}
 
 	div:nth-child(4) {
+		left: 2vh;
 		top: 21vh;
 		width: 90px;
 		height: 90px;
 	}
 
 	div:nth-child(5) {
-		left: -2rem;
-		top: 22vh;
+		left: 2vh;
+		top: 23vh;
 		width: 80px;
 		height: 80px;
 	}
 
 	div:nth-child(6) {
-		top: -12rem;
-		right: 46.5vw;
+		top: -20vh;
+		right: 47vw;
 	}
 
 	div:nth-child(7) {
-		top: -11rem;
-		right: 48vw;
+		top: -18vh;
+		right: 49vw;
 	}
 
 	div:nth-child(8) {
-		top: -10rem;
-		right: 48vw;
+		top: -16vh;
+		right: 49.5vw;
 	}
 
 	div:nth-child(9) {
-		top: -9rem;
+		top: -14vh;
+		right: 49vw;
+	}
+
+	div:nth-child(10) {
+		top: -12vh;
 		right: 46vw;
 	}
 

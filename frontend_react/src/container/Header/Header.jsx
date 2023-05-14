@@ -61,6 +61,7 @@ const Header = () => {
 					images.next,
 					images.express,
 					images.redux,
+					images.typescript,
 				].map((v, i) => (
 					<motion.div
 						className={`circle-cmp app__flex ${reverseCircle(v) ? 'circle-cmp-right' : ''}`}
