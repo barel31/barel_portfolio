@@ -1,1 +1,4 @@
 /backend_sanity/node_modules
+/frontend_sanity/node_modules
+
+/backend_sanity/dist
